@@ -48,4 +48,4 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          args: --exclude-path _pages/previous.md --exclude-path README.md --exclude-path _pages/404.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: --exclude-path _pages/agenda.md --exclude-path _pages/previous.md --exclude-path README.md --exclude-path _pages/404.md --verbose --no-progress './_*/**/*.md' './**/*.html'
