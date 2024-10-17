@@ -11,6 +11,7 @@ nav_order: 3
 {% assign sorted = upcoming | sort: 'date' %}
 
 {% if sorted.size > 0 %}
+
 <div class="container session-list">
     <div class="row row-cols-md-2 row-cols-sm-1">
         {% for session in sorted %}
