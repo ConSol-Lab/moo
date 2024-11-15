@@ -1,0 +1,58 @@
+@ARTICLE{Ihalainen2024-jArtifIntellRes,
+  title     = "Unifying {SAT}-based approaches to maximum satisfiability solving",
+  html = "https://www.jair.org/index.php/jair/article/view/15986",
+  author    = "Ihalainen, Hannes and Berg, Jeremias and J{\"{a}}rvisalo, Matti",
+  journal   = "The journal of artificial intelligence research",
+  publisher = "AI Access Foundation",
+  volume    =  80,
+  pages     = "931--976",
+  abstract  = "Maximum satisfiability (MaxSAT), employing propositional logic as
+               the declarative language of choice, has turned into a viable
+               approach to solving NP-hard optimization problems arising from
+               artificial intelligence and other real-world settings. A key
+               contributing factor to the success of MaxSAT is the rise of
+               increasingly effective exact solvers that are based on iterative
+               calls to a Boolean satisfiability (SAT) solver. The three types
+               of SAT-based MaxSAT solving approaches, each with its
+               distinguishing features, implemented in current state-of-the-art
+               MaxSAT solvers are the core-guided, the implicit hitting set
+               (IHS), and the objective-bounding approaches. The
+               objective-bounding approach is based on directly searching over
+               the objective function range by iteratively querying a SAT solver
+               if the MaxSAT instance at hand has a solution under different
+               bounds on the objective. In contrast, both core-guided and IHS
+               are so-called unsatisfiability-based approaches that employ a SAT
+               solver as an unsatisfiable core extractor to determine sources of
+               inconsistencies, but critically differ in how the found
+               unsatisfiable cores are made use of towards finding a provably
+               optimal solution. Furthermore, a variety of different algorithmic
+               variants of the core-guided approach in particular have been
+               proposed and implemented in solvers. It is well-acknowledged that
+               each of the three approaches has its advantages and
+               disadvantages, which is also witnessed by instance and
+               problem-domain specific runtime performance differences (and at
+               times similarities) of MaxSAT solvers implementing variants of
+               the approaches. However, the questions of to what extent the
+               approaches are fundamentally different and how the benefits of
+               the individual methods could be combined in a single algorithmic
+               approach are currently not fully understood. In this work, we
+               approach these questions by developing UniMaxSAT, a general
+               unifying algorithmic framework. Based on the recent notion of
+               abstract cores, UniMaxSAT captures in general core-guided, IHS
+               and objective-bounding computations. The framework offers a
+               unified way of establishing quite generally the correctness of
+               the current approaches. We illustrate this by formally showing
+               that UniMaxSAT can simulate the computations of various
+               algorithmic instantiations of the three types of MaxSAT solving
+               approaches. Furthermore, UniMaxSAT can be instantiated in novel
+               ways giving rise to new algorithmic variants of the approaches.
+               We illustrate this aspect by developing a prototype
+               implementation of an algorithmic variant for MaxSAT based on the
+               framework.",
+  month     =  "7~" # jul,
+  year      =  2024,
+  keywords  = "automated reasoning; combinatorial optimization; Boolean
+               satisfiability;MaxSAT;Propositional satisfiability",
+  doi       = "10.1613/jair.1.15986",
+  language  = "en"
+}
