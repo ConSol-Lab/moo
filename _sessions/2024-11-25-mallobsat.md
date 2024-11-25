@@ -1,6 +1,6 @@
 ---
 layout: session
-title: "Column Elimination: An Iterative Approach to Solving Integer Programs"
+title: "MallobSat: Scalable SAT Solving by Clause Sharing"
 host: Maarten Flippo
 host_ref: https://maartenflippo.com
 session_type: paper
