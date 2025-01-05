@@ -1,0 +1,359 @@
+@MASTERSTHESIS{Dorland2023-Other,
+  title    = "Instruction scheduling for blind quantum computing",
+  html = "https://resolver.tudelft.nl/uuid:8a95e25d-56c3-40f9-a274-94f428a74260",
+  author   = "Dorland, B",
+  address  = "Delft",
+  abstract = "Quantum networks offer more capabilities than classical networks.
+              For example, quantum networks can solve certain problems faster
+              than classical networks and they can even solve problems which
+              cannot be solved with classical networks. One well-known quantum
+              network application is blind quantum computing (BQC). In a BQC
+              application a client node sends a computation to a server node in
+              the network. The server node performs this computation without
+              knowing the details about the actual input or computation being
+              performed and returns the result of the computation to the client
+              node. Quantum applications are often repeated many times, due to
+              randomness that is involved in the result of executing a quantum
+              application. When a server node performs BQC repeatedly with
+              multiple client nodes, there follows an interesting problem how
+              all corresponding instructions can be scheduled for the server
+              optimally, given that certain types of instructions referred to as
+              entanglement instructions can only be scheduled at given moments
+              by a so called network schedule. One classical metric used to
+              assess the quality of a schedule is makespan, which is the time
+              that it takes to complete all instructions. A quantum oriented
+              metric involved is success probability, which indicates what
+              fraction of executions yield a desired result when repeatedly
+              executing an application. In this thesis, an experimental
+              demonstration is given of the use of constraint programming (CP)
+              for the scheduling of instructions of quantum network
+              applications. This demonstration focuses on scheduling
+              instructions that the server node should execute when performing
+              BQC repeatedly with a small number of client nodes at the same
+              time. Different CP models are presented that assign start times to
+              tasks that the server node should execute. By comparing the CP
+              models to a baseline scheduler that schedules tasks as soon as
+              possible, it was found that CP can be used to reduce the makespan
+              when BQC is performed by the server node with multiple clients at
+              the same time, while preserving a similar success probability. A
+              main drawback that followed from the CP approach is scalability.
+              Future work is to be done on studying how CP can be used for
+              larger quantum networks.",
+  year     =  2023,
+  keywords = "Quantum computations",
+  school   = "TU Delft"
+}
+
+@MASTERSTHESIS{Jirovska2023-Other,
+  title    = "Evaluating an {RCPSP} Implementation of Quantum Program Scheduling",
+  html = "https://resolver.tudelft.nl/uuid:6abe7dc4-0308-490e-b156-eed07426e129",
+  author   = "Jirovsk\'{a}, H",
+  address  = "Delft",
+  abstract = "The goal of quantum application scheduling is to enable the
+              execution of applications on a quantum network. As the final step
+              in the application scheduling process, program scheduling locally
+              schedules execution of blocks of instructions on each node by
+              defining so-called node schedules. In this thesis, we present a
+              formal definition of program scheduling and propose success
+              metrics to evaluate the quality of node schedules. We implement
+              program scheduling using the framework of Resource-Constrained
+              Project Scheduling Problem (RCPSP) and and simulate the execution
+              of node schedules. By evaluating the performance of program
+              scheduling on datasets with diverse quantum applications including
+              quantum key distribution and blind quantum computing, we observe
+              that heuristic-driven approaches achieve comparable results to
+              optimal program scheduling while requiring fewer computational
+              resources. Our work offers valuable insights into the translation
+              of classical scheduling problems into the quantum domain,
+              contributing to the advancement of quantum application scheduling.",
+  year     =  2023,
+  keywords = "RCPSP;Quantum computations;Scheduling",
+  school   = "TU Delft"
+}
+
+@INPROCEEDINGS{Schoenberger2024-Other,
+  title     = "Using Boolean satisfiability for exact shuttling in trapped-ion
+               quantum computers",
+  html = "https://dl.acm.org/doi/10.1109/ASP-DAC58780.2024.10473902",
+  abstract = "Trapped ions are a promising technology for building scalable quantum computers. Not only can they provide a high qubit quality, but they also enable modular architectures, referred to as Quantum Charge Coupled Device (QCCD) architecture. Within these devices, ions can be shuttled (moved) throughout the trap and through different dedicated zones, e.g., a memory zone for storage and a processing zone for the actual computation. However, this movement incurs a cost in terms of required time steps, which increases the probability of decoherence, and, thus, should be minimized. In this paper, we propose a formalization of the possible movements in ion traps via Boolean satisfiability. This formalization allows for determining the minimal number of time steps needed for a given quantum algorithm and device architecture, hence reducing the decoherence probability. An empirical evaluation confirms that---using the proposed approach---minimal results (i.e., the lower bound) can be determined for the first time. An open-source implementation of the proposed approach is publicly available at https://github.com/cda-tum/mqt-ion-shuttler.",
+  author    = "Schoenberger, Daniel and Hillmich, Stefan and Brandl, Matthias
+               and Wille, Robert",
+  booktitle = "2024 29th Asia and South Pacific Design Automation Conference
+               (ASP-DAC)",
+  publisher = "IEEE",
+  pages     = "127--133",
+  month     =  "Jan",
+  year      =  2024,
+  keywords  = "Propositional satisfiability;Quantum computations",
+  doi       = "10.1109/asp-dac58780.2024.10473902"
+}
+
+
+
+
+
+  @ARTICLE{Sato2024-arxivquant-ph,
+  title         = "Generating shuttling procedures for constrained silicon
+                   quantum dot array",
+  html = "https://arxiv.org/abs/2401.14683",
+  author        = "Sato, Naoto and Sekiguchi, Tomonori and Utsugi, Takeru and
+                   Mizuno, Hiroyuki",
+  journal       = "arXiv [quant-ph]",
+  abstract      = "In silicon quantum computers, a single electron is trapped in
+                   a microstructure called a quantum dot, and its spin is used
+                   as a qubit. For large-scale integration of qubits, we
+                   previously proposed an approach of arranging the quantum dots
+                   in a two-dimensional array and sharing a control gate in a
+                   row or column of the array. In our array, the shuttling of
+                   electrons is a useful technique to operate the target qubit
+                   independently and avoid crosstalk. However, since the
+                   shuttling is also conducted using shared control gates, the
+                   movement of qubits is complexly constrained. We therefore
+                   propose a formal model on the basis of state transition
+                   systems to describe those constraints and operation
+                   procedures on the array. We also present an approach to
+                   generate operation procedures under the constraints.
+                   Utilizing this approach, we present a concrete method for our
+                   16 $\times$ 8 quantum dot array. By implementing the proposed
+                   method as a quantum compiler, we confirmed that it is
+                   possible to generate operation procedures in a practical
+                   amount of time for arbitrary quantum circuits. We also
+                   demonstrated that crosstalk can be avoided by shuttling and
+                   that the fidelity in that case is higher than when crosstalk
+                   is not avoided.",
+  month         =  "Jan",
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "quant-ph",
+  keywords      = "Quantum computations"
+}
+
+
+
+@INPROCEEDINGS{Venturelli2019-Other,
+  title     = "Quantum Circuit Compilation: An Emerging Application for
+               Automated Reasoning",
+  html = "https://openreview.net/forum?id=S1eEBO3nFE",
+  author    = "Venturelli, Davide and Do, Minh and O'Gorman, Bryan and Frank,
+               Jeremy and Rieffel, Eleanor and Booth, Kyle E C and Nguyen, Thanh
+               and Narayan, Parvathi and Nanda, Sasha",
+  booktitle = "Scheduling and Planning Applications Workshop",
+  abstract  = "Quantum computing is an information processing paradigm with the
+               potential to solve certain problems faster than any algorithm
+               running on classical computer architectures. In the next few
+               years, new processors will be developed that support quantum
+               computations exceeding the simulation ability of even the largest
+               classical computer systems. A number of academic and industrial
+               groups are developing prototypes of such devices, also known as
+               NISQ (Noisy Intermediate Scale Quantum) processors. Much as
+               software must be compiled to run on classical computers, quantum
+               algorithms must be compiled to take into account the constraints
+               of particular NISQ devices. Especially in these early prototypes,
+               algorithm performance degrades with runtime due to noise; for
+               this reason, minimizing the runtime of the compiled algorithm
+               (which is represented by a ''quantum circuit'') is critical. We
+               describe a software framework to enable an automated reasoning
+               approach to Quantum Circuit Compilation for NISQ architectures
+               (QCC-NISQ), and our current implementation of it as part of
+               software suite for automated, architecture-aware, compilation for
+               emerging quantum computers. The key components of this suite are
+               a circuit synthesizer, a QCC solver, and a visualizer. These
+               tools provide critical support for the continued development of
+               practical quantum computers and research into quantum algorithms.",
+  month     =  "Apr",
+  year      =  2019,
+  keywords  = "Quantum computations"
+}
+
+
+@ARTICLE{Venturelli2018-quantumSciTechnol,
+  title     = "Compiling quantum circuits to realistic hardware architectures
+               using temporal planners",
+  author    = "Venturelli, Davide and Do, Minh and Rieffel, Eleanor and Frank,
+               Jeremy",
+  journal   = "Quantum science and technology",
+  publisher = "IOP Publishing",
+  volume    =  3,
+  number    =  2,
+  pages     =  025004,
+  abstract  = "To run quantum algorithms on emerging gate-model quantum
+               hardware, quantum circuits must be compiled to take into account
+               constraints on the hardware. For near-term hardware, with only
+               limited means to mitigate decoherence, it is critical to minimize
+               the duration of the circuit. We investigate the application of
+               temporal planners to the problem of compiling quantum circuits to
+               newly emerging quantum hardware. While our approach is general,
+               we focus on compiling to superconducting hardware architectures
+               with nearest neighbor constraints. Our initial experiments focus
+               on compiling Quantum Alternating Operator Ansatz (QAOA) circuits
+               whose high number of commuting gates allow great flexibility in
+               the order in which the gates can be applied. That freedom makes
+               it more challenging to find optimal compilations but also means
+               there is a greater potential win from more optimized compilation
+               than for less flexible circuits. We map this quantum circuit
+               compilation problem to a temporal planning problem, and generated
+               a test suite of compilation problems for QAOA circuits of various
+               sizes to a realistic hardware architecture. We report compilation
+               results from several state-of-the-art temporal planners on this
+               test set. This early empirical evaluation demonstrates that
+               temporal planning is a viable approach to quantum circuit
+               compilation.",
+  month     =  apr,
+  html = "https://iopscience.iop.org/article/10.1088/2058-9565/aaa331",
+  year      =  2018,
+  keywords  = "Quantum computations;AI planning",
+  doi       = "10.1088/2058-9565/aaa331"
+}
+
+
+@ARTICLE{Booth2018-procIntConfAutomPlanSched,
+  title     = "Comparing and integrating constraint programming and temporal
+               planning for quantum circuit compilation",
+  author    = "Booth, Kyle and Do, Minh and Beck, J and Rieffel, Eleanor and
+               Venturelli, Davide and Frank, Jeremy",
+  journal   = "Proceedings of the ... International Conference on Automated
+               Planning and Scheduling",
+  publisher = "Association for the Advancement of Artificial Intelligence (AAAI)",
+  volume    =  28,
+  pages     = "366--374",
+  abstract  = "Recently, the makespan-minimization problem of compiling a
+               general class of quantum algorithms into near-term quantum
+               processors has been introduced to the AI community. The research
+               demonstrated that temporal planning is a strong approach for a
+               class of quantum circuit compilation (QCC) problems. In this
+               paper, we explore the use of constraint programming (CP) as an
+               alternative and complementary approach to temporal planning. We
+               extend previous work by introducing two new problem variations
+               that incorporate important characteristics identified by the
+               quantum computing community. We apply temporal planning and CP to
+               the baseline and extended QCC problems as both stand-alone and
+               hybrid approaches. Our hybrid methods use solutions found by
+               temporal planning to warm start CP, leveraging the ability of the
+               former to find satisficing solutions to problems with a high
+               degree of task optionality, an area that CP typically struggles
+               with. The CP model, benefiting from inferred bounds on planning
+               horizon length and task counts provided by the warm start, is
+               then used to find higher quality solutions. Our empirical
+               evaluation indicates that while stand-alone CP is only
+               competitive for the smallest problems, CP in our hybridization
+               with temporal planning out-performs stand-alone temporal planning
+               in the majority of problem classes.",
+  month     =  jun,
+  year      =  2018,
+  keywords  = "Quantum Computing; Quantum Circuit Compilation; Constraint
+               Programming; Optimization; Temporal Planning;Quantum
+               computations;Constraint solving;AI planning",
+  html = "https://ojs.aaai.org/index.php/ICAPS/article/view/13920",
+  doi       = "10.1609/icaps.v28i1.13920",
+  language  = "en"
+}
+
+  @INCOLLECTION{Mei2025-Other,
+  title     = "Disentangling the gap between quantum and \#SAT",
+  html = "https://dl.acm.org/doi/10.1007/978-3-031-77019-7_2",
+  abstract = "Weighted model counting (#SAT) has recently been shown to deliver a promising new method for tackling core problems in quantum circuit analysis. However, the development of weighted model counting tools is currently strongly motivated by applications in the domain of probabilistic computing, where weights consist of positive probabilities. Quantum computing, on the other hand, deals with complex amplitudes, which include the negative domain and are subject to the \ell ^2 norm, contrary to the \ell ^1 norm used for probabilities. The current paper explores reductions from quantum circuit semantics to weighted model counting over the complex, real, natural and integer numbers (e.g., \#\text {SAT}_\mathbb {C}, \#\text {SAT}_\mathbb R, etc.), and various sub(semi)rings of those. This study thereby charts tradeoffs between counting over simpler algebras and the costs of the reduction. While previous works recommend the use of different (semi)rings, like those including negative numbers, we can now more precisely state the tradeoff introduced by this change as (polynomial) blowup of the length of the encoding as #SAT formula, the number of variables and the structure of the formula. Moreover, our final encoding to \#\text {SAT}_{\{0,1\}} (unweighted model counting) represents an exact solution, obviating the need for floating-point calculations that could potentially cause numerical instability.",
+  author    = "Mei, Jingyi and Martens, Jan and Laarman, Alfons",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  pages     = "17--40",
+  series    = "Lecture notes in computer science",
+  year      =  2025,
+  keywords  = "Quantum computations;Model counting",
+  doi       = "10.1007/978-3-031-77019-7\_2",
+  language  = "en"
+}
+
+
+@INCOLLECTION{Mei2024-Other,
+  title     = "Equivalence checking of quantum circuits by model counting",
+  author    = "Mei, Jingyi and Coopmans, Tim and Bonsangue, Marcello and
+               Laarman, Alfons",
+  html = "https://link.springer.com/chapter/10.1007/978-3-031-63501-4_21",
+  booktitle = "Automated Reasoning",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  pages     = "401--421",
+  abstract  = "AbstractVerifying equivalence between two quantum circuits is a
+               hard problem, that is nonetheless crucial in compiling and
+               optimizing quantum algorithms for real-world devices. This paper
+               gives a Turing reduction of the (universal) quantum circuits
+               equivalence problem to weighted model counting (WMC). Our
+               starting point is a folklore theorem showing that equivalence
+               checking of quantum circuits can be done in the so-called
+               Pauli-basis. We combine this insight with a WMC encoding of
+               quantum circuit simulation, which we extend with support for the
+               Toffoli gate. Finally, we prove that the weights computed by the
+               model counter indeed realize the reduction. With an open-source
+               implementation, we demonstrate that this novel approach can
+               outperform a state-of-the-art equivalence-checking tool based on
+               ZX calculus and decision diagrams.",
+  series    = "Lecture notes in computer science",
+  year      =  2024,
+  keywords  = "Quantum computations;Equivalence checking;Model counting",
+  doi       = "10.1007/978-3-031-63501-4\_21",
+  language  = "en"
+}
+
+
+@INCOLLECTION{Mei2024-Other-01,
+  title     = "Simulating quantum circuits by model counting",
+  author    = "Mei, Jingyi and Bonsangue, Marcello and Laarman, Alfons",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  pages     = "555--578",
+  html = "https://link.springer.com/chapter/10.1007/978-3-031-65633-0_25",
+  abstract  = "Quantum circuit compilation comprises many
+               computationally hard reasoning tasks that lie inside
+               \#$${\textsf{P}}$$Pand its decision counterpart in
+               $${\textsf{PP}}$$PP. The classical simulation of universal
+               quantum circuits is a core example. We show for the first time
+               that a strong simulation of universal quantum circuits can be
+               efficiently tackled through weighted model counting by providing
+               a linear-length encoding of Clifford+Tcircuits. To achieve this,
+               we exploit the stabilizer formalism by Knill, Gottesmann, and
+               Aaronson by reinterpreting quantum states as a linear combination
+               of stabilizer states. With an open-source simulator
+               implementation, we demonstrate empirically that model counting
+               often outperforms state-of-the-art simulation techniques based on
+               the ZX calculus and decision diagrams. Our work paves the way to
+               apply the existing array of powerful classical reasoning tools to
+               realize efficient quantum circuit compilation; one of the
+               obstacles on the road towards quantum supremacy.",
+  series    = "Lecture notes in computer science",
+  year      =  2024,
+  keywords  = "Quantum computations;Model counting",
+  doi       = "10.1007/978-3-031-65633-0\_25",
+  language  = "en"
+}
+
+
+@INCOLLECTION{Quist2025-Other,
+  title     = "Advancing quantum computing with formal methods",
+  author    = "Quist, Arend-Jan and Mei, Jingyi and Coopmans, Tim and Laarman,
+               Alfons",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Nature Switzerland",
+  address   = "Cham",
+  html = "https://link.springer.com/chapter/10.1007/978-3-031-71177-0_25",
+  pages     = "420--446",
+  abstract  = "AbstractThis tutorial introduces quantum computing with a focus
+               on the applicability of formal methods in this relatively new
+               domain. We describe quantum circuits and convey an understanding
+               of their inherent combinatorial nature and the exponential
+               blow-up that makes them hard to analyze. Then, we show how
+               weighted model counting (\#SAT) can be used to solve hard
+               analysis tasks for quantum circuits.This tutorial is aimed at
+               everyone in the formal methods community with an interest in
+               quantum computing. Familiarity with quantum computing is not
+               required, but basic linear algebra knowledge (particularly matrix
+               multiplication and basis vectors) is a prerequisite. The goal of
+               the tutorial is to inspire the community to advance the
+               development of quantum computing with formal methods.",
+  series    = "Lecture notes in computer science",
+  year      =  2025,
+  keywords  = "Quantum computations",
+  doi       = "10.1007/978-3-031-71177-0\_25",
+  language  = "en"
+}
